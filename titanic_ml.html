@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css\bootstrap.css">
+</head>
+<body>
+    <div class="row tit">
+        <div class="col-md-12 ">
+            <h1>Titanic - Machine Learning from Disaster</h1>
+        </div>
+    </div>
+    <center><div class="one tt1">
+    <div class="row">
+        <div class="col-md-12">
+           <h2>First Experience with Kaggle.</h2> 
+        </div>
+    </div>
+    <div class="row t2">
+        <div class="col-md-12">
+            <h6>Competition :- Titanic - Machine Learning from Disaster</h6>
+        </div>
+    </div>
+    <div class="row t2">
+        <div class="col-md-12">
+          <p>As a beginner to kaggle the <span>Alexis Cook's Titanic Tutorial </span>  helped me in understanding how kaggle works and also helped me with my first Submission.</p>  
+        </div>
+    </div>
+    <div class="row t2">
+        <div class="col-md-12">
+            <h6>Initial Submission with the help of tutorial</h6>
+        </div>
+    </div>
+    <div class="row t2">
+        <div class="col-md-12 tt">
+            <p>1. We start with reading the input files that is the training data file and test data file</p>
+            <img src="img\one.png">
+        </div>
+    </div>
+    <div class="row t2">
+        <div class="col-md-12 tt">
+            <img src="img\two.png">
+        </div>
+    </div>
+    <div class="row t2">
+        <div class="col-md-12 tt">
+            <img src="img\three.png">
+        </div>
+    </div>
+    <div class="row t2">
+        <div class="col-md-12 tt">
+            <img src="img\four.png">
+        </div>
+    </div>
+    <div class="row t2">
+        <div class="col-md-12 tt">
+            <p>2. Calulating the percentage of women and men who survived</p>
+            <img src="img\five.png">
+        </div>
+    </div>
+    <div class="row t2">
+        <div class="col-md-12 tt">
+            <img src="img\six.png">
+        </div>
+    </div>
+    <div class="row t2">
+        <div class="col-md-12 tt">
+            <p>3. We use RandomForestClassifier to predict the data</p>
+            <img src="img\seven.png">
+        </div>
+    </div>
+    <div class="row t2">
+        <div class="col-md-12 tt">
+            <p>4. This submission gave me a score of 0.77511</p>
+            <img src="img\eight.png">
+        </div>
+    </div>
+    <div class="row t2">
+        <div class="col-md-12 tt">
+            <h6>Contribution/Improvisation</h6>
+        </div>
+    </div>
+    <div class="row t2">
+        <div class="col-md-12 tt">
+            <p>1. Read the data</p>
+            <img src="img\one.png"><br>
+            <img src="img\two.png"><br>
+            <img src="img\three.png"><br>
+            <img src="img\four.png">
+        </div>
+    </div>
+    <div class="row t2">
+        <div class="col-md-12 tt">
+            <p>2. Visualise the data to get more insight on the data</p><br>
+            <p>a. Plotting Survived over number of people we see that the number of people dead is more than the number of people survived.</p><br>
+            <img src="img\thirteen.png"><br>
+            <p>b. Survived by class.We can see that 65% of class 1 people survived and 48% class 2 people survived and 25% class 3 people have survived</p><br>
+            <img src="img\fourteen.png"><br>
+            <p>c. Survived by Salutation.</p><br>
+            <img src="img\fifteen.png"><br>
+            <p>d. Survived by Age. We can see that people in the Age range 15-40 have the highest survival rate. Even the deaths are highest in that range</p><br>
+            <img src="img\sixteen.png"><br>
+            <p>e. Survived by Embarked.</p><br>
+            <img src="img\seventeen.png">
+        </div>
+    </div>
+    <div class="row t2">
+        <div class="col-md-12 tt">
+            <p>3. Cleaning the data. Dealing with missing values in Training Data</p><br>
+            <p>a. View the data shape and description</p><br>
+            <img src="img\eighteen.png"><br>
+            <img src="img\ninteen.png"><br>
+            <p>b. Search for null values in the Dataset from the below representation we can see that Age, Cabin and Embarked have null values</p><br>
+            <img src="img\twenty.png"><br>
+            <p>c. We find the Median of Age column and fill the null values with the Median</p><br>
+            <img src="img\t1.png"><br>
+            <p>d. For missing values in Embarked we find the place where most number of people embarked and assign that place to the missing values</p><br>
+            <img src="img\t2.png"><br>
+            <p>e. Dropping the cabin values cause I believe they dont have much importance</p><br>
+            <img src="img\t3.png"><br>
+            <p>f. No more null values in Training data</p><br>
+            <img src="img\t4.png"><br>
+            <p>g. Converting the string data in sex column to numerical data so we can use it for comparison</p><br>
+            <img src="img\t5.png"><br>
+            <p>h. Features to compare</p><br>
+            <img src="img\t6.png"><br>
+            <p>i. Checking which model gives the most accurate output from the output we can see that Gradient Boosting Classifier has the most accuracy</p><br>
+            <img src="img\t7.png"><br>
+            <img src="img\t8.png">
+        </div>
+    </div>
+    <div class="row t2">
+        <div class="col-md-12 tt">
+            <p>4. Cleaning the data. Dealing with missing values in Test Data</p>
+            <p>a. Null values in Test data. Age, Fare and Cabin have null values in the test dataset</p>
+            <img src="img\test_data_null.png">
+            <p>b. Missing values in Age is filled with its median values</p>
+            <img src="img\t30.png">
+            <p>c. Missing values in Fare is filled with its median values</p>
+            <img src="img\t31.png">
+            <p>d. Converting the string data in sex column to numerical data so we can use it for comparison</p>
+            <img src="img\t32.png">
+            <p>e. Applying the GradientBoostingClassifier to predict the values. This model has the highest accuracy score</p>
+            <img src="img\t33.png">
+            <p>f. This Submission gave me a Score of 0.76555</p>
+            <img src="img\t34.png">
+        </div>
+    </div>
+    <div class="row t2">
+        <div class="col-md-12">
+            <h5>Conclusion</h5>
+            <p>My Approach involved, classifying the data applying Machine Learning models to find the number of survivors from the given test data.I have taken the dataset tried cleaning the data by filling the null values, in this process I have identified and eliminated the missing values.</p><br>
+            <p>From the cleaned dataset I will be able to derive a better conclusion and thus by using relevant attributes from the data like age, class, SibSp and parch I tried to compare the number of survivors under each category.
+                I tried to find the model with the least error and thus found the Gradient Boost model to be the most suitable.
+                Even though I could not land a successful result by increasing my Score but my tries will never stop until I derive an efficient model to find the survivors from the test data.</p>
+        </div>
+    </div>
+</div></center>
+<div class="row footer" id="get">
+    <div class="col-md-12 ftr">
+  <h2>Get in touch</h2>
+</div>
+</div>
+<div class="row footer">
+<div class="col-md-12 ftr">
+    <h5>Address : <span>Meena Bazar   *Near katoratal chowki*    Kashipur   *Uttarakhand*    India.</span> </h5>
+</div>
+</div>
+<div class="row footer">
+  <div class="col-md-12 ftr">
+      <h5>Phone : <span>+91 8126451683</span></h5>
+  </div>
+</div>
+<div class="row footer">
+<div class="col-md-12 ftr">
+    <h5>Email : <span>warisjamal92@gmail.com</span></h5>
+</div>
+</div>
+<div class="row footer">
+<div class="col-md-12 ftr">
+    <a href="https://instagram.com/gallivanter_master?utm_medium=copy_link"><i class="fa fa-instagram"></i></a>
+    <span><a href="https://www.facebook.com/warisjamal15"><i class="fa fa-facebook"></i></a></span>
+    <span><a href="https://www.linkedin.com/in/waris-jamal-907a84bb"><i class="fa fa-linkedin"></i></a></span>
+    <span><a href=""><i class="fa fa-github"></i></a></span>
+</div>
+</div>
+<center><div class="row footer">
+<div class="col-md-12 me">
+    <h5>Made by <a href="https://www.facebook.com/negi.jii.7165"> Deepak </a></h5>
+</div>
+</div></center>
+</body>
+<script src="js\jquery.js"></script>
+<script src="js\bootstrap.js"></script>
+</html>
+  
